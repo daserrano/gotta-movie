@@ -14,7 +14,7 @@ class App extends Component {
 
   _renderResults = () => {
       return this.state.results.length === 0
-      ? <p>Movie not found</p>
+      ? <p className="MoviesList">Movie not found</p>
       : <MoviesList movies={this.state.results}/>
   }
 
@@ -27,7 +27,7 @@ class App extends Component {
         </div>
         {this.state.usedSearch
           ? this._renderResults()
-          : <small>Use the form to search a movie</small>
+          : <small className="MoviesList">Use the form to search a movie</small>
         }
       </div>
     );
