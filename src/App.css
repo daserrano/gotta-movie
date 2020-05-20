@@ -9,12 +9,6 @@
 }
 
 .MoviesList {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 16px;
-  max-width: 95vw;
-  align-items: flex-start; */
   max-width: 95vw;
   display: flex;
   justify-content: center;
