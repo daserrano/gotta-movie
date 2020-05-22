@@ -43,13 +43,13 @@ export class Detail extends Component {
       <div>
         <ButtonBackToHome/>
         <h1><b>{Title}</b></h1>
-        <img src={Poster} alt={Poster} />
-        <h2><b>Director:</b> {Director} </h2>
+        {Poster !== 'N/A' ? <img src={Poster} alt={Poster} /> : ''}
+        {Director !== 'N/A' ? <h2><b>Director:</b> {Director} </h2> : ''}
         <h3><b>Actors:</b> {Actors}</h3>
         <span><b>Year:</b> {Year} </span><br/>
-        <span><b>Metascore:</b> {Metascore}/100 </span><br/>
-        <span><b>Imdb Rating:</b> {imdbRating}/10 </span>
-        <p><b>Plot: </b>{Plot}</p>
+        {Metascore !== 'N/A' ? <p><b>Metascore:</b> {Metascore}/100 </p> : ''}
+        {imdbRating !== 'N/A' ? <p><b>Imdb Rating:</b> {imdbRating}/10 </p> : ''}
+        {Plot !== 'N/A' ? <p><b>Plot: </b>{Plot}</p> : ''}
       </div>
     )
   }
